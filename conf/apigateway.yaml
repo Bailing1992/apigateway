@@ -1,0 +1,15 @@
+
+Server:
+  Port: 8981
+  EnableDebugServer: ON
+  DebugServerPort: 8988
+  GoPprofServerPort: 8986
+  RequestTimeout: 40
+  RequestReadTimeout: 35
+  RequestWriteTimeout: 5
+
+ProxyListConfig:
+  -
+    PSM: "ai"
+  -
+    PSM: "bi"
