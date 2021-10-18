@@ -65,6 +65,7 @@ func (c *Container) RegisterProxy() error {
 		container.setProxy(proxyConfig.PSM, proxyInstance)
 
 	}
+	return nil
 }
 
 func (c *Container) RegisterServer() error {
@@ -78,8 +79,9 @@ func (c *Container) RegisterServer() error {
 func (c *Container) RegisterRouter() (returnError error) {
 	//newRouter := router.NewRouter(processContext.Logger())
 
-	proxyConfigList := c.config.ProxyListConfig
-	for _, proxyConfig := range proxyConfigList {
-		p := c.GetProxy(proxyConfig.PSM)
-	}
+	//proxyConfigList := c.config.ProxyListConfig
+	//for _, proxyConfig := range proxyConfigList {
+	//	p := c.GetProxy(proxyConfig.PSM)
+	//}
+	return
 }
